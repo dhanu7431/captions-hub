@@ -6,9 +6,3 @@ It is built using Bootstrap,HTML,CSS and PHP
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/75805927/202193565-7559869f-4b01-495e-b053-1032adab26d0.gif)
 
-
-## Contact
-
-Srikara Ranganath : srikarar@gmail.com
-
-github repo : https://github.com/SrikaraRanganath/CaptionsHub
