@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Search for Captions</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top" id="nav-bar">
+<div class="container-fluid">
+<a class="navbar-brand" href="index.html">CaptionsHub</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>	
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" id="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="categories.php">Categories</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="about.html" tabindex="-1" aria-disabled="true">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="contact.php" tabindex="-1" aria-disabled="true">
+          Contact
+        </a>
+      </li>
+    </ul>
+</div>
+</div>
+</nav>
+
+<div class="container-fluid d-flex align-content-center flex-wrap" id="search-bar">
+<div class="container-fluid padding1">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4 text-light">Captions done right.</h1>
+			<p class="lead text-light" id="text-bar">Turn your pictures into amazing posts that tell a story</p>
+		</div>		
+	</div>
+</div>
+<div class="container-fluid padding1">
+	<div class="row text-center padding1 justify-content-center">
+		<div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-lg-push-2 col-md-push-2 col-sm-push-2 col-xs-push-2">
+		<form action="captions.php" method="get" style="padding-top:10px;">
+			<div class="input-group input-group-lg">
+			<input type="text" name="search" placeholder="Enter a keyword" class="form-control">
+			<div class="input-group-append">
+			<button type="submit" class="btn btn-primary btn-lg" value="Submit" name="submit">Search</button>
+			</div>
+			</div>
+		</form>
+		</div>
+	</div>		
+</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<p class="lead">Have a category that you would like to get featured on our website ?
+			You can make sure it reaches us by clicking on the button.Our review team will go through it and post it on the website.</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<a href="contact.php"><button type="button" class="btn btn-outline-dark">REQUEST CATEGORY</button></a>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="content-bar">
+	<div class="row justify-content-center">
+		<div class="col-lg-8">
+			<h2>Thousands of Professional Captions</h2>
+			<p class="lead">CaptionsHub has more than 1,000 different professionally-written captions to choose from.From Motivation to Love and everything in between.With a simple interface and thousands of options ,an amazing caption is just a few clicks away.</p>
+			<br>
+			<center><a href="categories.php"><button class="btn btn-light" type="button">VIEW CATEGORIES</button></a></center>
+			<br><br>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid padding">
+	<div class="row text-center welcome justify-content-center">	
+		<hr>
+		<div class="col-4" style="margin-right: 15px;">
+			<p class="lead">Trending</p>
+			<a href="captions.php?search=Motivation&submit=Submit">Motivation</a><br><br>
+  			<a href="captions.php?search=Swag&submit=Submit">Swag</a><br><br>
+  			<a href="captions.php?search=Love&submit=Submit">Love</a><br><br>
+  			<a href="captions.php?search=Relationship&submit=Submit">Relationship</a><br><br>
+		</div>
+		<div class="col-4">
+			<p class="lead">Popular</p>
+			<a href="captions.php?search=Motivation&submit=Submit">Marvel</a><br><br>
+  			<a href="captions.php?search=Swag&submit=Submit">Millionaire</a><br><br>
+  			<a href="captions.php?search=Love&submit=Submit">Hustle</a><br><br>
+  			<a href="captions.php?search=Relationship&submit=Submit">Pets</a><br><br>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<hr>
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="google.com"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-6">
+				<a href="index.html"><img src="logo-footer.png" id="footer-logo"></a>
+				<hr class="light">
+				<p>captionshub@gmail.com</p>
+				<p>Karnataka, India</p>
+			</div>
+			<div class="col-md-6">
+				<b>Our Hours</b>
+				<hr class="light">
+				<p>Monday : 9am - 5pm</p>
+				<p>Saturday : 9am - 5pm</p>
+				<p>Sunday : closed</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>© captionshub.com</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

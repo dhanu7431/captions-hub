@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Singlet|Poppins');
+html, body{
+	height: 100%
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	color: #222;
+}
+.navbar{
+	padding: .8rem;
+}
+.navbar-brand img{
+	width: 90px;
+	height: 50px;
+}
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link{
+	font-size: 1.1em !important;
+}
+#header-backdrop{
+	background-image: url("background-about.jpg");
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	color: whitesmoke;
+}
+.welcome hr{
+	border-top: 2px solid #b4b4b4;
+	width: 95%;
+	margin-top:.3rem;
+	margin-bottom: 1rem; 
+}
+footer{
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+}
+hr.light{
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+footer a{
+	color: #d5d5d5;
+}
+footer img{
+	width: 100px;
+	height: 60px;
+}
+hr.light-100{
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+.social a{
+	font-size: 4.5em;
+	padding: 3rem;
+}
+.fa-facebook{
+	color: #3b5998;
+}
+.fa-twitter{
+	color: #00aced;
+}
+.fa-instagram{
+	color: #3f729b;
+}
+.fa-facebook:hover,.fa-twitter:hover,.fa-instagram:hover{
+	color: #d5d5d5;
+}
+@media(max-width: 992px){
+	.social a {
+		font-size: 4rem;
+		padding: 2rem;
+	}
+}
+@media(max-width: 768px){
+.display-4{
+	font-size: 200%;
+}
+.display-3{
+	font-size: 180%
+}
+.social a{
+	font-size: 2.5em;
+	padding: 1.2rem;
+}
+}
+@media(max-width: 576px){
+.display-4{
+	font-size: 160%;
+}
+.display-3{
+	font-size: 165%;
+}
+.social a{
+	font-size: 2em;
+	padding: 0.7rem;
+}
+}
+
